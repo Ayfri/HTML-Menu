@@ -33,6 +33,10 @@ body {
     padding: 0;
 }
 
+#main-menu:first-child {
+    border: none;
+}
+
 #main-menu > li {
     text-transform: uppercase;
 }
@@ -44,7 +48,7 @@ body {
 .item {
     list-style-type: none;
     box-sizing: border-box;
-    border: 1px solid var(--gray);
+    border-left: 1px solid var(--gray);
     height: 100%;
     display: flex;
     text-align: center;
@@ -72,13 +76,21 @@ body {
 #sub-menu:hover > ul {
     display: block;
     position: absolute;
+    top: 10.5%;
+    left: 23%;
     padding-inline-start: 0;
 }
 
 #sub-menu > ul > li {
     background: var(--darker-gray);
-    padding: 0.2em;
+    border-bottom: 1px solid var(--gray);
+    border-left: none;
+    padding: 1em;
     white-space: nowrap;
+}
+
+#sub-menu > ul > li:last-child {
+    border-bottom: 0;
 }
 
 .sub-menu-right > ul {
@@ -103,7 +115,13 @@ body {
 
 li:hover > .sub-sub-menu li {
     background: var(--gray);
+    border-bottom: 1px dotted var(--metal);
+    border-left: none;
     display: flex;
+}
+
+li:hover > .sub-sub-menu li:last-child {
+    border-bottom: 0;
 }
 
 li:hover > .sub-sub-menu li:hover {
