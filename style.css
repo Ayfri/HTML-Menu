@@ -13,17 +13,20 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: var(--light-gray);
 }
 
 .menu {
-    margin: 2em 4em;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 #main-menu {
     display: flex;
     flex-direction: row;
     background: var(--dark-blue);
-    color: var(--white);
     align-items: center;
     justify-content: space-between;
     height: 5vh;
@@ -41,19 +44,20 @@ body {
 .item {
     list-style-type: none;
     box-sizing: border-box;
-    border: 1px solid var(--metal);
+    border: 1px solid var(--gray);
     height: 100%;
     display: flex;
     text-align: center;
     align-items: center;
+    padding: 1em;
+    white-space: nowrap;
 }
 
 .item:hover {
-
     background: var(--orange);
 }
 
-#sub-menu {
+#sub-menu > ul {
     display: block;
     flex-wrap: wrap;
     flex-direction: row;
@@ -119,5 +123,3 @@ li:hover > .sub-sub-menu {
 #mega-menu ul, #blog div, #images div {
     display: none;
 }
-
-#sub-menu
