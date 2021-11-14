@@ -33,6 +33,10 @@ body {
     padding: 0;
 }
 
+#main-menu:hover > :first-child {
+    background: var(--orange);
+}
+
 #main-menu:first-child {
     border: none;
 }
@@ -79,6 +83,10 @@ body {
     top: 10.5%;
     left: 23%;
     padding-inline-start: 0;
+}
+
+#sub-menu *:hover {
+    background: var(--dark-blue);
 }
 
 #sub-menu > ul > li {
@@ -138,6 +146,14 @@ li:hover > .sub-sub-menu {
     background: var(--orange);
 }
 
-#mega-menu ul, #blog div, #images div {
+#mega-menu ul {
+    display: none;
+}
+
+#mega-menu:hover ul {
+    display: flex;
+}
+
+#blog div, #images div {
     display: none;
 }
