@@ -157,3 +157,17 @@ li:hover > .sub-sub-menu {
 #blog div, #images div {
     display: none;
 }
+
+i::before {
+    width: 10px;
+    height: 10px;
+    background: var(--metal);
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f015";
+}
